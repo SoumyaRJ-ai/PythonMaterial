@@ -67,7 +67,7 @@ except requests.exceptions.Timeout as e:
     print(e)
 
 # How to disable security certificate checks for requests in Python
-response = requests.get("https://www.kite.com", verify=False)
+response = requests.get("https://www.kite.com", verify=True)
 print(response)
 # Warning Disabling security checks can potentially compromise the integrity of requests if handled incorrectly. Read more about the requests library and its usage here.
 
