@@ -26,7 +26,7 @@ def get_status_images(_foldername):
         url = URL.format(HTTP_CODE=each_code)
         # print(url)
 
-        response = requests.get(url)
+        response = requests.get(url, timeout=60)
         # pp(dict(response.headers))
         if (
             response.status_code == 200

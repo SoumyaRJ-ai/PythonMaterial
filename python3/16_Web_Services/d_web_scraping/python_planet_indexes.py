@@ -3,7 +3,7 @@ from bs4 import BeautifulSoup
 
 
 def main():
-    resp = requests.get("http://planetpython.org")
+    resp = requests.get("http://planetpython.org", timeout=60)
 
     soup = BeautifulSoup(resp.text)
 

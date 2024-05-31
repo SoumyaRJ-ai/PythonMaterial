@@ -17,7 +17,7 @@ def get_address_for_given_coordinates(latitude, longitude):
         "addressdetails": 1,
     }
 
-    response = requests.get(REVERSE_SEARCH_URL, params=payload).json()
+    response = requests.get(REVERSE_SEARCH_URL, params=payload, timeout=60).json()
     # pprint(response)
     if response.get("error"):
         print(response.get("error"))

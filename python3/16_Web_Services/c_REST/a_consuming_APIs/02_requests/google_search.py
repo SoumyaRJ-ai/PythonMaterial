@@ -6,8 +6,8 @@ pip install -U requests --user
 import requests
 
 response = requests.get(
-    "https://www.google.com/search?q=python+programming&oq=python+programming&aqs=chrome..69i57j69i65l3j69i61j69i60.6334j0j7&sourceid=chrome&ie=UTF-8"
-)
+    "https://www.google.com/search?q=python+programming&oq=python+programming&aqs=chrome..69i57j69i65l3j69i61j69i60.6334j0j7&sourceid=chrome&ie=UTF-8", 
+timeout=60)
 print(response)
 
 print(dir(response))

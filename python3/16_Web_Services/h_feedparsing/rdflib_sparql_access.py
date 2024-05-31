@@ -24,5 +24,5 @@ g = rdflib.Graph()
 
 import requests
 
-resp = requests.get("https://query.wikidata.org/sparql")
+resp = requests.get("https://query.wikidata.org/sparql", timeout=60)
 print(vars(resp))

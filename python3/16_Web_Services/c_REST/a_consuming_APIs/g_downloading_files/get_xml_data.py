@@ -16,7 +16,7 @@ URL = "http://www.ecb.europa.eu/stats/eurofxref/eurofxref-daily.xml"
 def check_exchange_rate(
     currency: str = None, threshold: Number = None
 ) -> Optional[str]:
-    res = requests.get(URL)
+    res = requests.get(URL, timeout=60)
 
     # we have to parse XML (unfortunately I did not find a .json API)
     parsed = parseString(

@@ -26,7 +26,7 @@ import requests
 
 
 print("\n\n\n")
-r = requests.get("https://httpbin.org/stream/5", stream=True)
+r = requests.get("https://httpbin.org/stream/5", stream=True, timeout=60)
 
 if r.encoding is None:
     r.encoding = "utf-8"

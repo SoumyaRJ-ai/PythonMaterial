@@ -7,7 +7,7 @@ import requests
 url = "https://stackoverflow.com"
 
 # connect to the url
-website = requests.get(url)
+website = requests.get(url, timeout=60)
 
 # read html
 html = website.text

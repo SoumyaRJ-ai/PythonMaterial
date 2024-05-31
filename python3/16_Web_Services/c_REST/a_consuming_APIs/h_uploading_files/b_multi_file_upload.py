@@ -24,7 +24,7 @@ def upload_multiple_files():
         ("test_file_3", open("my_file_3.txt", "rb")),
     ]
 
-    test_response = requests.post(test_url, files=test_files)
+    test_response = requests.post(test_url, files=test_files, timeout=60)
 
     if test_response.ok:
         print("Upload completed successfully!")

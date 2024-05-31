@@ -16,7 +16,7 @@ title = []
 
 # saves links and song names
 def scaper(url):
-    soup = BeautifulSoup(requests.get(url).content, "lxml")
+    soup = BeautifulSoup(requests.get(url, timeout=60).content, "lxml")
     data = soup.findAll("div", {"playlist_thumb_det"})
     for line in data:
         link = str(line.contents[1])

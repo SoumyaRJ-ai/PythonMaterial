@@ -5,7 +5,7 @@ from bs4 import BeautifulSoup
 
 while True:
     # Make a request to the website
-    response = requests.get("https://www.worldometers.info/coronavirus/")
+    response = requests.get("https://www.worldometers.info/coronavirus/", timeout=60)
 
     # Use BeautifulSoup to parse the HTML content
     soup = BeautifulSoup(response.content, "html.parser")

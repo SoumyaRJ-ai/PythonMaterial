@@ -35,7 +35,7 @@ def start(username=None):
     print("\n\nDownloading tweets for " + username)
     response = None
     try:
-        response = requests.get(url)
+        response = requests.get(url, timeout=60)
     except Exception as e:
         print(repr(e))
         sys.exit(1)
@@ -103,7 +103,7 @@ def get_tweets_data(username, soup):
 
         next_response = None
         try:
-            next_response = requests.get(next_url)
+            next_response = requests.get(next_url, timeout=60)
         except Exception as e:
             # in case there is some issue with request. None encountered so far.
             print(e)

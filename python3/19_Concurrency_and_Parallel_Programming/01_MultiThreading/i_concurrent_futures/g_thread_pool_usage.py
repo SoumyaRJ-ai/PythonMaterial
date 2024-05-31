@@ -12,7 +12,7 @@ IMAGE_FOLDER = Path(".").absolute() / "demo"
 
 def download_image(img_url: str, save_loc: Path) -> np.ndarray:
     img_url = img_url.replace("\n", "")
-    img_bytes = requests.get(img_url).content
+    img_bytes = requests.get(img_url, timeout=60).content
     img_name = img_url.split("/")[-1].replace("\n", "")
 
     save_loc.mkdir(parents=True, exist_ok=True)

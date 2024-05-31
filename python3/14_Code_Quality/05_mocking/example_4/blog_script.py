@@ -6,7 +6,7 @@ class Blog:
         self.name = name
 
     def posts(self):
-        response = requests.get("https://jsonplaceholder.typicode.com/posts")
+        response = requests.get("https://jsonplaceholder.typicode.com/posts", timeout=60)
 
         return response.json()
 

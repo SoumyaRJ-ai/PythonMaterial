@@ -6,7 +6,7 @@ Purpose: HtML parsing, using lxml
 import requests
 from lxml import html
 
-page = requests.get("https://html.com/")
+page = requests.get("https://html.com/", timeout=60)
 tree = html.fromstring(page.content)
 
 with open("html_webpage.html", mode="w", encoding="utf-8") as f:

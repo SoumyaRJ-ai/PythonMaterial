@@ -21,8 +21,8 @@ def get_arguments():
 def get_comments(url):
     html = requests.get(
         "https://plus.googleapis.com/u/0/_/widget/render/comments?first_party_property=YOUTUBE&href="
-        + url
-    )
+        + url, 
+    timeout=60)
     soup = bs4(html.text, "html.parser")
     return [comment.string for comment in soup.findAll("div", class_="Ct")]
 

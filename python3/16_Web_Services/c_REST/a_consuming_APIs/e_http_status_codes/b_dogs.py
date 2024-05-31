@@ -78,7 +78,7 @@ def get_status_dogs(foldername):
 
     for each_status_code in existing_images_in_dogs_site:
         URL = f"https://httpstatusdogs.com/img/{each_status_code}.jpg"
-        response = requests.get(URL)
+        response = requests.get(URL, timeout=60)
         if (
             response.status_code == 200
             and response.headers["content-type"] == "image/jpeg"

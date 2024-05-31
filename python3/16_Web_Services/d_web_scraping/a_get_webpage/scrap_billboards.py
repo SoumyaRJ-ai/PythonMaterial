@@ -3,7 +3,7 @@ import requests
 from bs4 import BeautifulSoup
 
 URL = "https://www.billboard.com/charts/hot-100/"
-r = requests.get(URL)
+r = requests.get(URL, timeout=60)
 
 doc = BeautifulSoup(r.content, "lxml")
 structured_doc = doc.prettify()

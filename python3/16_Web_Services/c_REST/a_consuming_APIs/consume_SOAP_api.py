@@ -10,5 +10,5 @@ body = """<?xml version="1.0" encoding="UTF-8"?>
               <ns1:Body><ns0:GetWeatherInformation/></ns1:Body>
          </SOAP-ENV:Envelope>"""
 
-response = requests.post(url, data=body, headers=headers)
+response = requests.post(url, data=body, headers=headers, timeout=60)
 print(response.content)

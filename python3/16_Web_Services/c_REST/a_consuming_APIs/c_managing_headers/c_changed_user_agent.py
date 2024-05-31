@@ -23,9 +23,9 @@ print(f'You are hitting this API with {response_data["user-agent"]}')
 
 response = requests.get(
     "http://httpbin.org/user-agent",
-    headers={"User-agent": "Internet Explorer/2.0"}
+    headers={"User-agent": "Internet Explorer/2.0"}, 
     # faking a browser
-)
+timeout=60)
 # print(f"{response.status_code =}")
 # print(f"{response.url         =}")
 
