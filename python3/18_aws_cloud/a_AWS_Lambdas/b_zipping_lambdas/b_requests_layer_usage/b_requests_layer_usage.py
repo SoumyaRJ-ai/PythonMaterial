@@ -2,7 +2,7 @@ import requests
 
 
 def lambda_handler(event, context):
-    response = requests.get("https://www.google.com")
+    response = requests.get("https://www.google.com", timeout=60)
     return {"statusCode": 200, "body": response.content.decode()}
 
 

@@ -4,7 +4,7 @@ import requests
 
 
 def download(url):
-    return requests.get(url)
+    return requests.get(url, timeout=60)
 
 
 if __name__ == "__main__":

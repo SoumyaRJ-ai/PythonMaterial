@@ -13,7 +13,7 @@ API_URL = "http://www.apilayer.net/api/"
 
 def get_live_currency_quote():
     URL = API_URL + "live?access_key=" + ACCESS_KEY
-    response = requests.get(URL)
+    response = requests.get(URL, timeout=60)
     # pprint(response.json())
     quotes = response.json().get("quotes")
     USDINR_quote = quotes.get("USDINR")
@@ -36,7 +36,7 @@ def get_live_currency_quote2(requesting_data="live"):
         "format": 1
         # 'source': 'INR'
     }
-    response = requests.get(URL, params=request_params).json()
+    response = requests.get(URL, params=request_params, timeout=60).json()
     if response.get("error", {}):
         return response.get("error", {}).get("info")
 

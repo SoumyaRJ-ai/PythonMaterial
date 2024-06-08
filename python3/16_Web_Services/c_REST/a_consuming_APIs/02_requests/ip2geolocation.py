@@ -31,7 +31,7 @@ def get_geolocation(all_the_ip_address):
     # get geolocation
     for line in all_the_ip_address:
         print("Grabbing geo info for row # {0}".format(counter))
-        r = requests.get("https://freegeoip.net/json/{0}".format(line[0]))
+        r = requests.get("https://freegeoip.net/json/{0}".format(line[0]), timeout=60)
         line.extend([str(r.json()["country_name"]), str(r.json()["city"])])
         updated_addresses.append(line)
         counter += 1

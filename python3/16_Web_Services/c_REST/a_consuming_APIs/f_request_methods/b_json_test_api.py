@@ -24,7 +24,7 @@ URL = "https://jsonplaceholder.typicode.com"  # text/html
 
 
 def get_response(url):
-    response = requests.get(url)
+    response = requests.get(url, timeout=60)
     if response.ok:
         print(
             f'\n{response.headers["Content-Type"]}'

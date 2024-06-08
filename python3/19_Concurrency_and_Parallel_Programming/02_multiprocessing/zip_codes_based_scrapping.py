@@ -13,7 +13,7 @@ def getzip(code):
     try:
         code = str(code)
         url = f"https://maps.googleapis.com/maps/api/geocode/json?address={code}"
-        res = requests.get(url).json()["results"]
+        res = requests.get(url, timeout=60).json()["results"]
         if len(res) < 1:  # Re-try
             print("Retrying")
             return getzip(code)

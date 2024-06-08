@@ -22,7 +22,7 @@ IDP_CONFIG = {
 
 
 def get_well_known_metadata():
-    response = requests.get(IDP_CONFIG["well_known_url"])
+    response = requests.get(IDP_CONFIG["well_known_url"], timeout=60)
     response.raise_for_status()
     return response.json()
 

@@ -6,7 +6,7 @@ from lxml import html
 
 def get_stocks(url):
     # Make Request
-    page = requests.get(url)
+    page = requests.get(url, timeout=60)
     # Parse/Scrape
     tree = html.fromstring(page.text)
     xpath = '//*[@id="mw-content-text"]/table[1]'

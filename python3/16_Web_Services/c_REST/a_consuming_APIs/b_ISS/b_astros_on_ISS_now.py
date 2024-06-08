@@ -10,7 +10,7 @@ from pprint import pp
 
 import requests
 
-response = requests.get("http://api.open-notify.org/astros.json")
+response = requests.get("http://api.open-notify.org/astros.json", timeout=60)
 # print(dir(response))
 print(f"{response.status_code =}")
 print(f"{response.url         =}")

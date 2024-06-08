@@ -11,7 +11,7 @@ def loadRSS():
     url = "http://www.hindustantimes.com/rss/topnews/rssfeed.xml"
 
     # creating HTTP response object from given url
-    resp = requests.get(url)
+    resp = requests.get(url, timeout=60)
 
     # saving the xml file
     with open("topnewsfeed.xml", "wb") as f:

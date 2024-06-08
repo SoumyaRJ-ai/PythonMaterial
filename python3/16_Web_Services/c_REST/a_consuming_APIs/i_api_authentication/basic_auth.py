@@ -6,7 +6,7 @@ import requests
 def login(_username, _password):
     url = "http://httpbin.org/basic-auth/user/passwd"
 
-    response = requests.get(url, auth=(_username, _password))
+    response = requests.get(url, auth=(_username, _password), timeout=60)
     if response.status_code != 200:
         print("Error found", response.status_code, file=sys.stderr)
         print(response.reason)

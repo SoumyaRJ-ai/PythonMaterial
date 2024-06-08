@@ -11,7 +11,7 @@ def get_location_coordinates(search_string):
     SEARCH_URL = "https://nominatim.openstreetmap.org/search?"
     payload = {"q": search_string, "format": "json", "polygon": 1, "addressdetails": 1}
 
-    response = requests.get(SEARCH_URL, params=payload).json()
+    response = requests.get(SEARCH_URL, params=payload, timeout=60).json()
     # pprint(response)
     for each in response:
         result_string = """====Search Result=====\n{DISPLAY_NAME}

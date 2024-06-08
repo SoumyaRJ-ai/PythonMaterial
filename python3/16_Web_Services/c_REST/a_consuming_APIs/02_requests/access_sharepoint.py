@@ -16,8 +16,8 @@ def download_sharepoint_file(sharepoint_url, username, password, file_path):
     file_path = file_path.replace(" ", "%20")
 
     response = requests.get(
-        file_path, auth=HttpNtlmAuth(domain + "\\" + username, password), stream=True
-    )
+        file_path, auth=HttpNtlmAuth(domain + "\\" + username, password), stream=True, 
+    timeout=60)
 
     if response.status_code != 200:
         print(response.content)

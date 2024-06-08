@@ -7,7 +7,7 @@ from pprint import pprint
 
 import requests
 
-response = requests.get("http://httpbin.org/ip")
+response = requests.get("http://httpbin.org/ip", timeout=60)
 print(f"{response.status_code =}")
 print(f"{response.url         =}")
 
