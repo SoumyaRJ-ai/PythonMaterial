@@ -7,6 +7,7 @@ Purpose: Regular Expressions flags ?iLmsux
     u: makes \w, \b, \d, and \s unicode dependent
     x: makes the expression verbose i.e. ignores unescaped whitespace as well as text after # sign i.e. it treats text after # as comments.
 """
+
 import re
 
 print("\n(?i)")

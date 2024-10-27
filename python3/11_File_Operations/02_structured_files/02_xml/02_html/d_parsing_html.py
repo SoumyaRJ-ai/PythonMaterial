@@ -4,8 +4,8 @@ Purpose: Parsing html using lxml
 """
 from io import StringIO
 
-from lxml import etree
 import lxml.etree
+from lxml import etree
 
 # Feeding RAW XML for Serialisation
 html = etree.XML(

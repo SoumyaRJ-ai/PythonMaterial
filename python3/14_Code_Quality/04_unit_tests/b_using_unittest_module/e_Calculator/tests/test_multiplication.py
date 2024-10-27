@@ -1,6 +1,7 @@
 """
 Purpose: Testing multiplication functionality in calculator
 """
+
 import sys
 import unittest
 

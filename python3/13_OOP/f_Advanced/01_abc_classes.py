@@ -7,6 +7,7 @@ Purpose: Abstract Classes
       to provide implementations for the abstract methods.
 
 """
+
 from abc import ABC, abstractmethod
 
 

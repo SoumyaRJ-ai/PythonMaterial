@@ -2,6 +2,7 @@
 Purpose: Dunder( Double underscore) Methods
 
 """
+
 num1 = 100
 print(num1 + 22)
 print(num1.__add__(22))

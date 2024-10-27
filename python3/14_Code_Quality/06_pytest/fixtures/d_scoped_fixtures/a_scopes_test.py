@@ -8,6 +8,7 @@ Fixtures have optional arguments called scope. The scope parameters has the foll
     5) package
 
 """
+
 import pytest
 
 

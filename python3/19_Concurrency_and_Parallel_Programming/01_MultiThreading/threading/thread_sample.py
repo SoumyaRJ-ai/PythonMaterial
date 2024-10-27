@@ -5,7 +5,6 @@ from threading import Thread
 
 
 class SquareRootCalculator:
-
     """This class spawns a separate thread to calculate a bunch of square
     roots, and checks in it once a second until it finishes."""
 

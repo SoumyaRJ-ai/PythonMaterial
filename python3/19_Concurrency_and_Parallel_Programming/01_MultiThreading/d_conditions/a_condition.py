@@ -16,6 +16,7 @@ Purpose: Synchronization using Condition object
 Following code demonstrates the implementation of another simple
 producer-consumer problem with the help of the Condition object.
 """
+
 import random
 import time
 from threading import Condition, Thread

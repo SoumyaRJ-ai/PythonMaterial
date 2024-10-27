@@ -1,4 +1,4 @@
-Built-in Functions (71) - Python 3.11
+Built-in Functions (71) - Python 3.13.0
 ========================
 abs()	        delattr()	hex()			oct()			sum()
 aiter()			dict()		id()			open()			super()

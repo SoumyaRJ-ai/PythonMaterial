@@ -5,6 +5,7 @@ Purpose: Adding Logging configuration
     %(levelname)s: the logging level of the message
     %(message)s  : the message
 """
+
 import logging
 
 logging.basicConfig(

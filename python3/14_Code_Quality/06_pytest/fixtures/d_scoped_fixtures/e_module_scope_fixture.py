@@ -4,6 +4,7 @@ Purpose: module_scope_fixture
     - It can be used for setup that needs to be done once for all the tests in a module.
     - For example, you might use this to set up a logger that will be used across multiple tests.
 """
+
 import logging
 
 import pytest

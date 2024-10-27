@@ -7,6 +7,7 @@ Purpose: Regular Expressions
     Flags can modify the pattern behaviour
         re.I/ re.IGNORECASE  will help to perform case-insensitive pattern matches
 """
+
 import re
 
 target_string = "Python Programming is good for health"

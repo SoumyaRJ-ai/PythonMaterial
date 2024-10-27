@@ -1,6 +1,7 @@
 """
 Purpose: Union type
 """
+
 from typing import Union
 
 

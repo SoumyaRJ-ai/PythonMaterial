@@ -1,6 +1,7 @@
 """
 Purpose: Static typing
 """
+
 from typing import Iterator
 
 

@@ -8,6 +8,7 @@ Purpose: bool() built-in function
     boolean
     braces
 """
+
 # bool()
 # integer type (int and float)
 #       zero     - False

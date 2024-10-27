@@ -3,6 +3,7 @@ purpose: regular expression
 
     re.split
 """
+
 import re
 
 print(re.findall(".", "244.255.190.23"))

@@ -4,6 +4,7 @@ Purpose: session_scope_fixture
     - It can be used for setup that needs to be done once for all the tests in a test run.
     - For example, you might use this to set up a temporary directory for your tests to write files to.
 """
+
 import tempfile
 
 import pytest

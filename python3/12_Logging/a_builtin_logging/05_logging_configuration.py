@@ -22,6 +22,7 @@ Format              Description
 %(processName)s	    Process name (if available).
 %(message)s	        The logged message, computed as msg % args.
 """
+
 import logging
 
 # Time in log

@@ -2,6 +2,7 @@
 Purpose: String Operations
             - Indexing
 """
+
 language = "Python Programming"
 print(language, type(language))
 

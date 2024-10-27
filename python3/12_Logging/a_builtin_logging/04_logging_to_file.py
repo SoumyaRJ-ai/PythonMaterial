@@ -2,6 +2,7 @@
 Purpose: logging to log file
     .log
 """
+
 import logging
 
 # basicConfig - to set the format of log test

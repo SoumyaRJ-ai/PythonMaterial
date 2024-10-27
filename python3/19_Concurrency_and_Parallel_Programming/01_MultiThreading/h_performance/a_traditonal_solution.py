@@ -2,6 +2,7 @@
 Purpose: To read content from file,
     and replace it, traditionally
 """
+
 from time import perf_counter
 
 

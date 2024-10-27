@@ -41,7 +41,7 @@ t.substitute(name="World", age=30)  # 'name: World - $name - $World  age : 30yea
 string.Template("$who likes $what").substitute({"who": "udhay", "what": "python"})
 # 'udhay likes python'
 
-string.Template("$who likes $what").substitute({"who": "udhay"})
+# string.Template("$who likes $what").substitute({"who": "udhay"})
 # KeyError: 'what'
 
 string.Template("$who likes $what").safe_substitute({"who": "udhay"})

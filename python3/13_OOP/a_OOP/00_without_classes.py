@@ -16,6 +16,7 @@ Purpose: without OOPS, solving a problem
             Transaction 2 - withdraw  550        2950
 
 """
+
 balance = 0
 
 

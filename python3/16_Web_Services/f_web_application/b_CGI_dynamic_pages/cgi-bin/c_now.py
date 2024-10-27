@@ -3,6 +3,7 @@ Purpose: CGI
     CGI - Common Gateway Interface
 
 """
+
 import time
 
 print("Content-Type: text/html\n\n")  # html markup follows

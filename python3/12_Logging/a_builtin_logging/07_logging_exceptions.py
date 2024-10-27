@@ -6,6 +6,7 @@ Call this method only from an exception handler.
 
 logging.exception(ex) is same as logging.error(ex, exc_info=True)
 """
+
 import logging
 
 # logging configuration

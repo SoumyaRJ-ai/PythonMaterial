@@ -57,11 +57,15 @@ response = requests.get(f"{base_url}/cookies", timeout=60)
 print(response.cookies)
 
 # Send a GET request to the /cookies/set endpoint to set a cookie
-response = requests.get(f"{base_url}/cookies/set", cookies={"name": "Alice"}, timeout=60)
+response = requests.get(
+    f"{base_url}/cookies/set", cookies={"name": "Alice"}, timeout=60
+)
 print(response.cookies)
 
 # Send a GET request to the /basic-auth/{user}/{passwd} endpoint to authenticate with HTTP basic authentication
-response = requests.get(f"{base_url}/basic-auth/user/passwd", auth=("user", "passwd"), timeout=60)
+response = requests.get(
+    f"{base_url}/basic-auth/user/passwd", auth=("user", "passwd"), timeout=60
+)
 print(response.json())
 
 # Send a GET request to the /bearer endpoint to authenticate with a bearer token
@@ -114,8 +118,8 @@ print(response.json())
 
 # Send a GET request to the /hidden-basic-auth/{user}/{passwd} endpoint to authenticate with HTTP basic authentication
 response = requests.get(
-    f"{base_url}/hidden-basic-auth/user/passwd", auth=("user", "passwd"), 
-timeout=60)
+    f"{base_url}/hidden-basic-auth/user/passwd", auth=("user", "passwd"), timeout=60
+)
 print(response.json())
 
 # Send a GET request to the /digest-auth/{qop}/{user}/{passwd}/{algorithm} endpoint to authenticate with digest authentication

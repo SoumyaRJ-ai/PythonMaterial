@@ -2,6 +2,7 @@
 Purpose: Solving this problem
     conventionally without using threads
 """
+
 import time
 
 

@@ -12,7 +12,8 @@ def gpt3(input):
         "https://dashboard.scale.com/spellbook/api/app/kw1n3er6",
         json={"input": input},
         headers={"Authorization": "Basic cld6n7eoo0065sr1acbwczykv"},
-    timeout=60)
+        timeout=60,
+    )
     return response.text
 
 

@@ -6,6 +6,7 @@ Purpose: Using regex Module
         pip install -U regex --user
 
 """
+
 import re
 
 import regex

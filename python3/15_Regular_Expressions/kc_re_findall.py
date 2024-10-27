@@ -12,7 +12,6 @@ Purpose: regular expression
 To escape any re operator in pattern, place a \ before it, or enclose in []
 """
 
-
 import re
 
 # identify decimal number

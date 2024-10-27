@@ -7,6 +7,7 @@ Purpose: Flask app with sentry integration
     pip install --upgrade 'sentry-sdk[flask]'
 
 """
+
 import sentry_sdk
 from flask import Flask
 from sentry_sdk.integrations.flask import FlaskIntegration

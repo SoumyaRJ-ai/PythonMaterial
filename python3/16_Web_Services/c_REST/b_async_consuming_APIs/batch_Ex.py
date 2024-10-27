@@ -9,6 +9,7 @@ async def get_location(address)
     3. Wait for the result and return it.
 
 """
+
 import asyncio
 import json
 from urllib.parse import urlencode

@@ -1,6 +1,7 @@
 """
 Purpose: Imutable values
 """
+
 import logging
 
 logging.basicConfig(level=logging.DEBUG)

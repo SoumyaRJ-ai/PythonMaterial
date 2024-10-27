@@ -1,6 +1,7 @@
 """
 Purpose: Context Manager
 """
+
 # context mangers
 
 # Method 1

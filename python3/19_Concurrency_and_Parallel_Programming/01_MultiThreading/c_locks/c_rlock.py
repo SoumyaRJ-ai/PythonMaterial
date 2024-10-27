@@ -1,6 +1,7 @@
 """
 Purpose: Traditional Lock vs Re-Entrant Lock
 """
+
 import threading
 
 trad_lock = threading.Lock()

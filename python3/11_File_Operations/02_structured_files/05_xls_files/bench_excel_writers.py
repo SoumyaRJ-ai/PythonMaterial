@@ -84,9 +84,9 @@ def time_openpyxl():
     for row in range(row_max // 2):
         for col in range(col_max):
             colletter = get_column_letter(col + 1)
-            worksheet.cell(
-                "%s%s" % (colletter, row * 2 + 1)
-            ).value = "Row: %d Col: %d" % (row, col)
+            worksheet.cell("%s%s" % (colletter, row * 2 + 1)).value = (
+                "Row: %d Col: %d" % (row, col)
+            )
         for col in range(col_max):
             colletter = get_column_letter(col + 1)
             worksheet.cell("%s%s" % (colletter, row * 2 + 2)).value = row + col

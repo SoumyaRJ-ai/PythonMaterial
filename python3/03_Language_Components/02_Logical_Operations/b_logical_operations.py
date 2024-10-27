@@ -3,6 +3,7 @@
 Purpose: Logical Operations
     Chaining Comparsion(Relational) Operators
 """
+
 print("23 <73 <45", 23 < 73 < 45)
 #   23 <73  and     73 <45
 #     True  and       False = False

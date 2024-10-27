@@ -2,6 +2,7 @@
 Purpose: __slots__ importance
     pip install pympler --user
 """
+
 import sys
 
 from pympler.asizeof import asizeof

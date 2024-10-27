@@ -8,6 +8,7 @@ pattern
     $   To make to check at the end of string
     .   To get any character, except the newline(\n) character
 """
+
 import re
 
 # To get 5 characters, ( default is from start of string)

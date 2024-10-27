@@ -6,7 +6,6 @@ Purpose: unit testing
         - before death - tearDown method
 """
 
-
 import unittest
 
 

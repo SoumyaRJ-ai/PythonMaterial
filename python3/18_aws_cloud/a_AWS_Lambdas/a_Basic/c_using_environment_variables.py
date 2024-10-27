@@ -16,6 +16,7 @@ AWS Predefined Environment Variables
     AWS_XRAY_CONTEXT_MISSING    - The behavior of the X-Ray SDK when it can't find a trace segment or subsegment.
 
 """
+
 import json
 import os
 

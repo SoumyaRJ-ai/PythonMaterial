@@ -3,6 +3,7 @@ Purpose:
     This program takes an string input from a user
     and print the input in a text file
 """
+
 import threading
 import time
 

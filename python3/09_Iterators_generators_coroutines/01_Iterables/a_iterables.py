@@ -7,6 +7,7 @@ non-iterable objects ====> int, float, None, True, False ..
 Iterable objects     ====> str, list, tuple, dict, set, iterator, generator, range()
 
 """
+
 # for digit in 1234:
 #     print(digit)
 # TypeError: 'int' object is not iterable

@@ -1,6 +1,7 @@
 """
 Purpose: String slicing operations
 """
+
 language = "Python Programming"
 
 # P   y  t  h  o n   P r o g  r  a  m  m  i  n  g

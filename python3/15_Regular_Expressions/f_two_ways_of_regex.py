@@ -2,6 +2,7 @@
 Purpose: Regular Expressions
     - Two ways of writing Regular Expressions
 """
+
 import re
 
 target_string = "Programming is good in PyTHOn"

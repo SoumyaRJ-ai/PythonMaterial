@@ -6,6 +6,7 @@ Purpose: Multiple Inheritance
 
 NOTE: All the instance variables must be created in constructor - PEP 8
 """
+
 from pprint import pp
 
 

@@ -1,6 +1,7 @@
 """
 Purpose: Configuring Logging Level
 """
+
 import logging
 
 # Fixing the level of severity

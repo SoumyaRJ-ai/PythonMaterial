@@ -8,6 +8,7 @@ than the Animal class hierarchy, both quite a bit cliched. But all
 cliches became that way by being so good that everybody and their
 brother kept using them!
 """
+
 from abc import ABC, abstractmethod
 
 

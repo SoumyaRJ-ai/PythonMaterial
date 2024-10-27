@@ -1,6 +1,7 @@
 """
 Purpose: Testing division functionality in calculator
 """
+
 import sys
 import unittest
 

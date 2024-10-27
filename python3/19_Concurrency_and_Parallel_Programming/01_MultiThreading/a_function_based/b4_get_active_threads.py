@@ -1,6 +1,7 @@
 """
 Purpose: To list active threads
 """
+
 import threading
 import time
 

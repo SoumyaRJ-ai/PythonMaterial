@@ -3,6 +3,7 @@ Purpose: property Decorator
 
 - USECASE: Helps in controlling life-cycle of variable
 """
+
 import logging
 
 logging.basicConfig(level=logging.DEBUG)

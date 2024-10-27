@@ -4,6 +4,7 @@ Purpose: To create a class with singleton design pattern
     Instead of creating new instance, make use of already created instance
     Or not allowing new instance creation
 """
+
 from pprint import pprint
 
 

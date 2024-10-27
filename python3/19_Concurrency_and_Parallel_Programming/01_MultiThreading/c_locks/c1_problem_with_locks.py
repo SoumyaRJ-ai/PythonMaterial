@@ -3,7 +3,6 @@ Purpose: Problem with threading.Lock
     program to illustrate the use of Locks
 """
 
-
 import threading
 import time
 

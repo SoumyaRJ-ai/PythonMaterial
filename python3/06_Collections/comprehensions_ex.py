@@ -8,6 +8,7 @@ Purpose: comprehensions
                 3. Set comprehensions
                 4. Dictionary comprehensions
 """
+
 # Traditional
 new_list = []
 for i in range(2, 9):

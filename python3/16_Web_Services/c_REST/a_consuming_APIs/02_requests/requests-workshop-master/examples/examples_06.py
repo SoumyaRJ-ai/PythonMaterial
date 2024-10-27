@@ -72,5 +72,7 @@ def test_using_a_callback_for_dynamic_responses(userid):
         split_url = parsed_url.split("/")
         return f"You requested data for user {split_url[-1]}"
 
-    response = requests.get(f"https://jsonplaceholder.typicode.com/users/{userid}", timeout=60)
+    response = requests.get(
+        f"https://jsonplaceholder.typicode.com/users/{userid}", timeout=60
+    )
     assert response.json()["value"] == f"You requested data for user {userid}"

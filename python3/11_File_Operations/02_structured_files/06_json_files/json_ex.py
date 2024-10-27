@@ -9,6 +9,7 @@ strings
     dumps  --- python object to string
 
 """
+
 import json
 
 my_dict = {"a": 1, "b": 2}

@@ -88,8 +88,9 @@ logger.error("An error occurred!")
 # Example 9: Tracking HTTP requests:
 def get_weather_info():
     response = requests.get(
-        "https://api.openweathermap.org/data/2.5/weather?q=London&appid=YOUR_API_KEY", 
-    timeout=60)
+        "https://api.openweathermap.org/data/2.5/weather?q=London&appid=YOUR_API_KEY",
+        timeout=60,
+    )
 
     # Attach the HTTP request data to the transaction
     with sentry_sdk.start_transaction(op="request", request=response):

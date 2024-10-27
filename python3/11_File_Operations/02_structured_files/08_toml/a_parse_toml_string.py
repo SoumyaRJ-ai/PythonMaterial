@@ -3,6 +3,7 @@ Purpose: Parsing TOML string
 
     In python 3.11, tomllib module is added to builtin modules
 """
+
 import toml
 
 toml_str = """

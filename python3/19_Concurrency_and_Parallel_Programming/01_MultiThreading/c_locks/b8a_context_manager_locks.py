@@ -1,6 +1,7 @@
 """
 Purpose: Using Locks as context manager
 """
+
 import logging
 import threading
 

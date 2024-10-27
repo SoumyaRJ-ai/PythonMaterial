@@ -6,6 +6,7 @@ Purpose: Class Based Scope
         - It can be used for setup that needs to be done once for all the tests in a class.
         - For example, you might use this to set up a database connection that will be reused across multiple tests.
 """
+
 import pytest
 
 

@@ -2,6 +2,7 @@
 Purpose: Calculating simple area.
 
 """
+
 import doctest
 import math
 

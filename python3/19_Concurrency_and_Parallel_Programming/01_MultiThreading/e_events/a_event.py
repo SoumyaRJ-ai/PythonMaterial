@@ -8,6 +8,7 @@ Purpose: Synchronization with Event
 
 Following snippet demonstrates how Events can be used to trigger actions.
 """
+
 import random
 import time
 from threading import Event, Thread

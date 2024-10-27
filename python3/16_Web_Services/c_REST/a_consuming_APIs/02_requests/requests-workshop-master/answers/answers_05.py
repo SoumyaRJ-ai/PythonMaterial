@@ -12,8 +12,8 @@ import requests
 # Check that the root element has no text
 def test_check_root_of_xml_response():
     response = requests.get(
-        "http://parabank.parasoft.com/parabank/services/bank/accounts/12345", 
-    timeout=60)
+        "http://parabank.parasoft.com/parabank/services/bank/accounts/12345", timeout=60
+    )
     response_body_as_xml = et.fromstring(response.content)
     xml_tree = et.ElementTree(response_body_as_xml)
     root = xml_tree.getroot()
@@ -30,8 +30,8 @@ def test_check_root_of_xml_response():
 # Check that the text of the customerId element is '12212'
 def test_check_specific_element_of_xml_response():
     response = requests.get(
-        "http://parabank.parasoft.com/parabank/services/bank/accounts/12345", 
-    timeout=60)
+        "http://parabank.parasoft.com/parabank/services/bank/accounts/12345", timeout=60
+    )
     response_body_as_xml = et.fromstring(response.content)
     xml_tree = et.ElementTree(response_body_as_xml)
     first_name = xml_tree.find("customerId")
@@ -46,8 +46,9 @@ def test_check_specific_element_of_xml_response():
 # Check that there are more than 5 of these 'account' elements
 def test_check_number_of_accounts_for_12212_greater_than_five():
     response = requests.get(
-        "http://parabank.parasoft.com/parabank/services/bank/customers/12212/accounts", 
-    timeout=60)
+        "http://parabank.parasoft.com/parabank/services/bank/customers/12212/accounts",
+        timeout=60,
+    )
     response_body_as_xml = et.fromstring(response.content)
     xml_tree = et.ElementTree(response_body_as_xml)
     accounts = xml_tree.findall(".//account")
@@ -62,8 +63,9 @@ def test_check_number_of_accounts_for_12212_greater_than_five():
 #    find it on Google.)
 def test_use_xpath_for_more_sophisticated_checks():
     response = requests.get(
-        "http://parabank.parasoft.com/parabank/services/bank/customers/12212/accounts", 
-    timeout=60)
+        "http://parabank.parasoft.com/parabank/services/bank/customers/12212/accounts",
+        timeout=60,
+    )
     response_body_as_xml = et.fromstring(response.content)
     xml_tree = et.ElementTree(response_body_as_xml)
     savings_accounts = xml_tree.findall(".//account/type[.='SAVINGS']")

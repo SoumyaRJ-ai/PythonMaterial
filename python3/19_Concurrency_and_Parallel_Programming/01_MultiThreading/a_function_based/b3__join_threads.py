@@ -1,6 +1,7 @@
 """
 Purpose: Joining the threads to wait till all are completed
 """
+
 import os
 import threading
 

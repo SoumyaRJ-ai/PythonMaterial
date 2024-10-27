@@ -3,6 +3,7 @@ Purpose: Problem with Race condition
     A race condition occurs when two threads try to
     access a shared variable simultaneously.
 """
+
 from threading import Thread
 from time import sleep
 

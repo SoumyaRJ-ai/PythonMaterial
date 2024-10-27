@@ -1,6 +1,7 @@
 """
 Purpose: Type Annotation
 """
+
 from collections import defaultdict
 from typing import DefaultDict, Dict, List
 

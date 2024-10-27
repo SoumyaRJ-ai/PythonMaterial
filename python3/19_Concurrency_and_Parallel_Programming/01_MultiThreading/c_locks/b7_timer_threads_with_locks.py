@@ -1,6 +1,7 @@
 """
 Purpose: Working with Timer threads, with locks
 """
+
 import threading
 import time
 

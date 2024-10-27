@@ -21,6 +21,8 @@ def create_json_object():
 
 
 def test_send_json_with_unique_number_check_status_code():
-    response = requests.post("http://httpbin.org/post", json=create_json_object(), timeout=60)
+    response = requests.post(
+        "http://httpbin.org/post", json=create_json_object(), timeout=60
+    )
     print(response.request.body)
     assert response.status_code == 200

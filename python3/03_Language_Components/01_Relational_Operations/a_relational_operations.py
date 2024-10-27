@@ -11,6 +11,7 @@ Purpose: Relational Operations
      != not equal to
      <> not equal to  ( in python 2 only)
 """
+
 us_dollar = 86
 canadian_dollar = 50
 

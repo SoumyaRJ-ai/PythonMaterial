@@ -6,6 +6,7 @@ Purpose: functools.total_ordering
            a must like le, lt, gt or ge.
         2. Definition of eq function is mandatory.
 """
+
 import random
 from functools import total_ordering
 

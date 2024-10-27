@@ -4,6 +4,7 @@ Purpose:
     args and kwargs from a subclass as their values are
     being saved in private variables.
 """
+
 import logging
 import threading
 import time

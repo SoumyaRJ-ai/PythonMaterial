@@ -1,6 +1,7 @@
 """
 Purpose: Reading(Parsing) CSV using csv module
 """
+
 import csv
 
 # print(dir(csv))

@@ -1,6 +1,7 @@
 """
 Purpose: Synchronization in threads, with lock
 """
+
 import threading
 import time
 

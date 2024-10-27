@@ -1,7 +1,7 @@
-#!/usr/bin/python3
 """
 Purpose: range() builtin function
 """
+
 list(range(0))  # [] -> range(0, 0, 1)
 list(range(1, 0))  # [] -> range(1, 0, 1)
 list(range(1, 0, -1))  # [1]

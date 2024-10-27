@@ -2,6 +2,7 @@
 """
 Purpose: working with Iterables
 """
+
 values = [1, 2, 3, 4, 2, 1, 3, 1, 4, 3, 3]
 print(f"{values                        =}")
 print()

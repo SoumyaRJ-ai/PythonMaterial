@@ -1,6 +1,7 @@
 """
 Purpose: parse the dates with argparse
 """
+
 import argparse
 import datetime
 

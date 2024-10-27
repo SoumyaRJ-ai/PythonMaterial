@@ -5,6 +5,7 @@ Purpose: Data classes
                 pip install dataclasses
 
 """
+
 from dataclasses import dataclass
 
 

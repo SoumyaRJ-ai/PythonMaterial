@@ -4,6 +4,7 @@ an application. This module shows a simple multiplication operation with
 some delay can be parallelized using `ThreadPoolExecutor`. A good grasp of
 operating systems and CPUs is recommended before reading the code below.
 """
+
 import time
 from concurrent.futures import ThreadPoolExecutor, as_completed
 from datetime import datetime

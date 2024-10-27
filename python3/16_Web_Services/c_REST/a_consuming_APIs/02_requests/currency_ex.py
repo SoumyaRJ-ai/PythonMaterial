@@ -33,7 +33,7 @@ def get_live_currency_quote2(requesting_data="live"):
     request_params = {
         "access_key": ACCESS_KEY,
         "currencies": "USD,INR",  # ,AUD,CAD,PLN,MXN
-        "format": 1
+        "format": 1,
         # 'source': 'INR'
     }
     response = requests.get(URL, params=request_params, timeout=60).json()

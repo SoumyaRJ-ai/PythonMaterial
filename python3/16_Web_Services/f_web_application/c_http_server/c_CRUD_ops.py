@@ -7,6 +7,7 @@ Purpose: REST API with all CRUD operations
     DELETE /todos/{id} - Delete a specific todo by ID
 
 """
+
 import json
 from http.server import BaseHTTPRequestHandler
 

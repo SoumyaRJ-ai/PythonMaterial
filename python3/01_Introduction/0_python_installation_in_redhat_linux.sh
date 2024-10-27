@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Set Python version as a constant variable
-PYTHON_VERSION="3.10.2"
+PYTHON_VERSION="3.13.0"
 
 # Update packages
 sudo yum update -y

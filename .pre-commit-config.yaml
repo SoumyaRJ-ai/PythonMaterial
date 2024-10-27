@@ -2,13 +2,13 @@
 # See https://pre-commit.com for more information
 
 default_language_version:
-  python: python3.11
+  python: python3.12
 
 exclude: "python3/14_Code_Quality/python_2to3_ex.py|python3/01_Introduction/|python3/14_Code_Quality/00_static_code_analyses/"
 fail_fast: false
 repos:
   - repo: https://github.com/pre-commit/pre-commit-hooks
-    rev: v4.4.0
+    rev: v5.0.0
     hooks:
       - id: check-added-large-files
       - id: check-ast
@@ -43,19 +43,19 @@ repos:
       #- id: check-shebang-scripts-are-executable
 
   - repo: https://github.com/PyCQA/isort
-    rev: 5.12.0
+    rev: 5.13.2
     hooks:
       - id: isort
         args: [--profile=black] # , --check-only
         description: Sort Python imports
 
   - repo: https://github.com/pre-commit/mirrors-prettier
-    rev: v3.0.0-alpha.9-for-vscode
+    rev: v4.0.0-alpha.8
     hooks:
       - id: prettier
 
   - repo: https://github.com/psf/black
-    rev: 23.3.0
+    rev: 24.10.0
     hooks:
       - id: black
         language_version: python3
@@ -64,7 +64,7 @@ repos:
         language_version: python3
 
   - repo: https://github.com/sirosen/check-jsonschema
-    rev: 0.23.2 # checks for Github Actions CI config files
+    rev: 0.29.4 # checks for Github Actions CI config files
     hooks:
       - id: check-github-actions
       - id: check-github-workflows

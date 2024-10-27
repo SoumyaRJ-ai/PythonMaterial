@@ -17,6 +17,7 @@ Purpose: Synchronization using SemaPhores
 
 Following code demonstrates the use of semaphores in a simple producer-consumer problem.
 """
+
 import random
 import time
 from threading import BoundedSemaphore, Thread

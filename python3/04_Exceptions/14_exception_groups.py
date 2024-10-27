@@ -5,6 +5,7 @@ Purpose: Exception Groups
 PEP 654 - Exception Groups and except*
 
 """
+
 print("\n CASE 1")
 try:
     raise ValueError("This is Value Error")

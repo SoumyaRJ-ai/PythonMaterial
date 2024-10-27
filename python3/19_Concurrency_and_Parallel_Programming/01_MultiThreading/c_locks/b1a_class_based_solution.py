@@ -2,6 +2,7 @@
 Purpose: Class based implementation of
     synchronization using locks
 """
+
 from threading import Lock, Thread
 from time import sleep
 

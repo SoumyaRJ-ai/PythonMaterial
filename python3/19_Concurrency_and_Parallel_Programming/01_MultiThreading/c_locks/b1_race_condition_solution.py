@@ -3,6 +3,7 @@ Purpose: Solution to Race Condition
     Synchronization using Locks can help avoid race condition
 
 """
+
 from threading import Lock, Thread
 from time import sleep
 

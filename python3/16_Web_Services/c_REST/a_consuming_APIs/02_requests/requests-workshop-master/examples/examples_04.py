@@ -55,6 +55,8 @@ def test_send_xml_using_xml_string_block():
 def test_send_xml_using_element_tree():
     xml = create_xml_object()
     xml_as_string = et.tostring(xml)
-    response = requests.post("http://httpbin.org/anything", data=xml_as_string, timeout=60)
+    response = requests.post(
+        "http://httpbin.org/anything", data=xml_as_string, timeout=60
+    )
     print(response.request.body)
     assert response.status_code == 200

@@ -1,6 +1,7 @@
 """
 Purpose: To create a dynamic website
 """
+
 from urllib.parse import parse_qs
 from wsgiref.simple_server import make_server
 

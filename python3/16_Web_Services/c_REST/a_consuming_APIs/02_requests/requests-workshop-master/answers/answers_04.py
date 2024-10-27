@@ -45,7 +45,8 @@ def test_send_xml_body_from_docstring_check_status_code_is_200_and_name_is_corre
         "http://parabank.parasoft.com/parabank/services/bank/billpay?accountId=12345&amount=500",
         headers={"Content-Type": "application/xml"},
         data=create_xml_body_from_string(),
-    timeout=60)
+        timeout=60,
+    )
     assert response.status_code == 200
     assert response.headers["Content-Type"] == "application/xml"
 
@@ -85,7 +86,8 @@ def test_send_xml_body_from_elementtree_check_status_code_is_200_and_name_is_cor
         "http://parabank.parasoft.com/parabank/services/bank/billpay?accountId=12345&amount=500",
         headers={"Content-Type": "application/xml"},
         data=xml_as_string,
-    timeout=60)
+        timeout=60,
+    )
     print(response.request.body)
     assert response.status_code == 200
     assert response.headers["Content-Type"] == "application/xml"

@@ -3,6 +3,7 @@ Purpose:
     1. Calculate factorial using recursion.
     2. Call factorial function using thread.
 """
+
 from _thread import start_new_thread
 
 my_thread_id = 1

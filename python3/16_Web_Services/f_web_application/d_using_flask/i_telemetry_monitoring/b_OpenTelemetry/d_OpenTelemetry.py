@@ -7,6 +7,7 @@ Purpose:
     pip install opentelemetry-api opentelemetry-sdk
 
 """
+
 from random import randint
 
 from flask import Flask, request

@@ -5,8 +5,8 @@ Purpose: Logical Operations
     and - if  all are True, result is True
     or  - if any one of them is True, result is True
     not - negate the existing value
-
 """
+
 # and - If all are True, result is True; else False
 print("\n and operation ")
 print("True and True  ", True and True)  # True

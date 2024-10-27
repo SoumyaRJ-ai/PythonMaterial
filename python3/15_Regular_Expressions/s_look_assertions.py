@@ -20,6 +20,7 @@ Purpose: Look assertion
             - Ex: (?<!not )good morning matches "good morning" only if it is not preceded by the word "not".
 
 """
+
 import re
 
 print(re.findall("apple", "I love apple pie, but not apple juice or apple cider."))
